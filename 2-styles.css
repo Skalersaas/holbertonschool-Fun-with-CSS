@@ -1,0 +1,48 @@
+.toggle {
+    width: 40%;
+    margin: auto;
+}
+.toggle-cb {
+    display: none;
+}
+.toggle-cb:checked ~ .toggle-label .toggle-switch {
+    right:2rem;
+}
+.toggle-cb:checked ~ .toggle-label .toggle-inner {
+    background: pink;
+}
+
+.toggle-cb:checked ~ .toggle-label .toggle-inner::before {
+    content: "Yes";
+    left: 20%;
+    color:white
+}
+.toggle-label {
+    display: flex;
+    align-items: center;
+}
+.toggle-switch {
+    position: relative;
+    right: 11rem;
+    width: 4rem;
+    height: 4rem;
+    background: white;
+    border: gray solid 0.1rem;
+    border-radius: 50%;
+}
+.toggle-inner {
+    width: 9rem;
+    height: 3rem;
+    background: lightgray;
+    border: gray solid 0.1rem;
+    border-radius: 1.5rem;
+}
+.toggle-inner::before {
+    position: relative;
+    content: "No";
+    color: gray;
+    font-size: 30px;
+    top: 15%;
+    left:55%;
+    font-weight: bold;
+}

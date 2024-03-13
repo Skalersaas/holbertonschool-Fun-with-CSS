@@ -1,0 +1,13 @@
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: brown;
+    background: linear-gradient(currentColor 0 0)
+        bottom left/
+        var(--underline-width, 0%) 0.1rem
+        no-repeat;
+    transition: background-size 0.5s;    
+}
+a:hover {
+    --underline-width:100%;
+}
